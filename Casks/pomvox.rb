@@ -1,6 +1,6 @@
 cask "pomvox" do
-  version "0.2.3"
-  sha256 "85ea300e47a1e22a0b4e09858444c4e78b905078fee1aa9578476fff0f9e3fd7"
+  version "0.2.4"
+  sha256 "645b876d1b8b4f0ec826d595274803669669458a881e218d650f88e777e248cf"
 
   url "https://github.com/pomvox/pomvox/releases/download/v#{version}/Pomvox.dmg"
   name "Pomvox"
