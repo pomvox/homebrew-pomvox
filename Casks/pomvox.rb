@@ -1,8 +1,12 @@
 cask "pomvox" do
-  version "0.2.4"
-  sha256 "645b876d1b8b4f0ec826d595274803669669458a881e218d650f88e777e248cf"
+  # "short,build". Sparkle's appcast carries both, and `brew livecheck`
+  # reports them as one comma-separated version — so declaring only the
+  # short string fails `brew audit --online` every release with
+  #   Version '0.2.5' differs from '0.2.5,16' retrieved by livecheck.
+  version "0.2.5,16"
+  sha256 "4125b712dfff747efc798cddc38a942142bf9ceff99007b8d6aea4462f67413b"
 
-  url "https://github.com/pomvox/pomvox/releases/download/v#{version}/Pomvox.dmg"
+  url "https://github.com/pomvox/pomvox/releases/download/v#{version.csv.first}/Pomvox.dmg"
   name "Pomvox"
   desc "On-device voice dictation for Apple Silicon Macs"
   homepage "https://github.com/pomvox/pomvox"
