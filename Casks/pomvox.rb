@@ -3,8 +3,8 @@ cask "pomvox" do
   # reports them as one comma-separated version — so declaring only the
   # short string fails `brew audit --online` every release with
   #   Version '0.2.5' differs from '0.2.5,16' retrieved by livecheck.
-  version "0.2.5,16"
-  sha256 "4125b712dfff747efc798cddc38a942142bf9ceff99007b8d6aea4462f67413b"
+  version "0.2.6,17"
+  sha256 "7ce56938e78f3701407fbd334585d2f2f23f17fb61c7e12e677fbcf9140a8aea"
 
   url "https://github.com/pomvox/pomvox/releases/download/v#{version.csv.first}/Pomvox.dmg"
   name "Pomvox"
